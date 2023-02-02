@@ -13,7 +13,14 @@ export default function Search() {
       } else {
         const res = await fetch(`/api/search?q=${searchTerm}`)
         const resultsInit = await res.json() //
-        const { results } = JSON.parse(resultsInit) // result = {result, array(n)} // trebuie deconstruction
+
+        /* De retinut::
+         * const obj = { results: [{a:1}, {b:1}, {c:1}] };
+         * const { results } = obj;
+         *  results = [Object { a: 1 }, Object { b: 1 }, Object { c: 1 }]
+         */
+
+        const results = JSON.parse(resultsInit) // result = {result, array(n)} // trebuie folosit destructuring
 
         console.log('results--->', results)
 
