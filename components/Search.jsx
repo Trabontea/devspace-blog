@@ -20,7 +20,7 @@ export default function Search() {
          *  results = [Object { a: 1 }, Object { b: 1 }, Object { c: 1 }]
          */
 
-        const results = JSON.parse(resultsInit) // result = {result, array(n)} // trebuie folosit destructuring
+        const { results } = JSON.parse(resultsInit) // result = {result, array(n)} // trebuie folosit destructuring
 
         console.log('results--->', results)
 
