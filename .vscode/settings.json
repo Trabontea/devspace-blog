@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["frontmatter", "randomuser"]
+  "cSpell.words": ["frontmatter", "randomuser"],
+  "npm-scripts.showStartNotification": false
 }
